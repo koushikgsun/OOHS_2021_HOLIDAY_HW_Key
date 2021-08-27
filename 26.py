@@ -1,0 +1,8 @@
+P = int(input("Principle : "))
+N = int(input("Periods per year : "))
+R = float(input("Interest rate : "))
+T = int(input("Years : "))
+SI = int((P * R * T) / 100)
+CI = int(P * (((1 + ((R/100.0)/N)) ** (N*T))))
+print("The simple interest is : ", SI)
+print ("The final amount after compund interest : ", CI)
